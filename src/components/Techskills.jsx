@@ -76,7 +76,7 @@ function SQLIcon() {
     return (
       <div>
         <DiLinux size={64} className=' mx-2' />
-        <p className='flex flex-wrap  my-2 mb-0 items-center justify-center'>Python</p>
+        <p className='flex flex-wrap  my-2 mb-0 items-center justify-center'>Linux</p>
       </div>
     );
   }
