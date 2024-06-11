@@ -8,11 +8,7 @@ import { FaLinkedin } from "react-icons/fa"
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am Dyavanapelli Sujal, an engineering student passionately delving deeper into the realm of cybersecurity, with a specific focus on SOC (Security Operations Center) analysis. Eager to evolve into a SOC Analyst, I am currently pursuing my engineering degree, equipped with a robust foundation in technology and a knack for problem-solving. Intrigued by the intricacies of cybersecurity, I actively seek opportunities to expand my knowledge in this dynamic field.
-
-Proficient in Python, I am enthusiastic about exploring security-specific tools such as SIEM (Security Information and Event Management) platforms to enhance my capabilities in threat detection and incident response. As a proactive learner, I actively engage in online courses and participate in cybersecurity competitions to sharpen my skills and stay abreast of emerging trends.
-
-Driven by a passion for safeguarding digital assets, I am committed to making meaningful contributions to the security landscape as a SOC Analyst. My goal is to leverage my engineering background, coupled with my growing expertise in cybersecurity, to play a pivotal role in protecting organizations from cyber threats and ensuring a resilient security posture.`;
+export const ABOUT_TEXT = `I'm Dyavanapelli Sujal, an engineering student deeply passionate about cybersecurity, particularly on the blue team side, with a specialization in SOC analysis. Proficient in a range of cybersecurity essentials, I prioritize defensive strategies to safeguard digital assets. With expertise in computer networking and a keen interest in network security, I'm well-equipped to analyze and respond to threats effectively. Actively engaging in continuous learning and competitions in cybersecurity, I'm driven to excel as a SOC Analyst. Leveraging my knowledge in networking and broad cybersecurity expertise, I'm committed to fortifying defenses against evolving threats.`;
 
 export const EXPERIENCES = [
   {
@@ -80,7 +76,7 @@ export const PROJECTS = [
 
 export const Certifications = [
   {
-    title: "Google's CyberSecurity Couse",
+    title: "Google's CyberSecurity Course",
     image: googlecert,
     description:
       "Completing the Google Cybersecurity Course was a significant milestone for me, as it provided an excellent foundation in cybersecurity. This certificate not only introduced me to the fundamentals of cybersecurity but also equipped me with practical skills and knowledge essential for the field. It served as a stepping stone in my journey towards becoming proficient in cybersecurity and reinforced my passion for safeguarding digital assets",
@@ -94,6 +90,8 @@ export const CONTACT = {
   address: "Bhiwandi, Maharashtra",
   phoneNo: "+917028393406 ",
   email: "dyavanapellisujal7@gmail.com",
+  linkedin: "linkedin@dyavanapellisujal",
+  medium: "medium@dyavanapellisujal"
   
 };
 
