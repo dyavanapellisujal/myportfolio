@@ -1,0 +1,98 @@
+import project1 from "../assets/projects/project-1.jpg";
+import project2 from "../assets/projects/project-2.jpg";
+import project3 from "../assets/projects/project-3.jpg";
+import project4 from "../assets/projects/project-4.jpg";
+import googlecert from "../assets/projects/New-Google-Logo-497x500.webp"
+import { FaLinkedin } from "react-icons/fa"
+// import { Link } from 'react-router-dom';  
+
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+
+export const ABOUT_TEXT = `I am Dyavanapelli Sujal, an engineering student passionately delving deeper into the realm of cybersecurity, with a specific focus on SOC (Security Operations Center) analysis. Eager to evolve into a SOC Analyst, I am currently pursuing my engineering degree, equipped with a robust foundation in technology and a knack for problem-solving. Intrigued by the intricacies of cybersecurity, I actively seek opportunities to expand my knowledge in this dynamic field.
+
+Proficient in Python, I am enthusiastic about exploring security-specific tools such as SIEM (Security Information and Event Management) platforms to enhance my capabilities in threat detection and incident response. As a proactive learner, I actively engage in online courses and participate in cybersecurity competitions to sharpen my skills and stay abreast of emerging trends.
+
+Driven by a passion for safeguarding digital assets, I am committed to making meaningful contributions to the security landscape as a SOC Analyst. My goal is to leverage my engineering background, coupled with my growing expertise in cybersecurity, to play a pivotal role in protecting organizations from cyber threats and ensuring a resilient security posture.`;
+
+export const EXPERIENCES = [
+  {
+    year: "2023 - Present",
+    role: "Senior Full Stack Developer",
+    company: "Google Inc.",
+    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+  },
+  {
+    year: "2022 - 2023",
+    role: "Frontend Developer",
+    company: "Adobe",
+    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+  },
+  {
+    year: "2021 - 2022",
+    role: "Full Stack Developer",
+    company: "Facebook",
+    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+  },
+  {
+    year: "2020 - 2021",
+    role: "Software Engineer",
+    company: "Paypal",
+    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Securely Configuring Shared Folders in AD",
+    image: project1,
+    description:
+      " In this project, I demonstrate the secure configuration of shared folders in Active Directory (AD), highlighting my expertise in Windows Server administration and cybersecurity. Shared folders are essential for collaborative work environments, but improper configuration can lead to security vulnerabilities. Follow along as I guide you through the process of securely configuring shared folders in AD, including setting appropriate permissions, implementing access controls. Whether you're a system administrator or a cybersecurity enthusiast, this project provides valuable insights into securing shared resources in an enterprise environment.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://medium.com/@dyavanapellisujal7/securely-configure-shares-in-active-directory-group-based-access-control-and-permissions-5bd840fac05e"
+  },
+  {
+    title: "Hacking Wifi with Aircrack-ng",
+    image: project2,
+    description:
+      "In this project, I present a comprehensive guide to Wi-Fi penetration testing using Aircrack-ng. From understanding Wi-Fi security protocols to performing attacks, this project showcases my skills in ethical hacking and cybersecurity. Follow along as I walk you through setting up the environment, performing Wi-Fi attacks, and cracking Wi-Fi passwords using Aircrack-ng. Gain valuable insights into defending against Wi-Fi attacks and learn best practices for securing Wi-Fi networks. Whether you're a beginner or an experienced enthusiast, this project serves as a valuable resource for exploring the fascinating world of Wi-Fi penetration testing",
+    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    link: "https://medium.com/@dyavanapellisujal7/how-to-hack-wi-fi-networks-b73969824e64"
+  },
+    // {
+    //   title: "Portfolio Website",
+    //   image: project3,
+    //   description:
+    //     "A personal portfolio website showcasing projects, skills, and contact information.",
+    //   technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    // },
+  // {
+  //   title: "Blogging Platform",
+  //   image: project4,
+  //   description:
+  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+  // },
+];
+
+export const Certifications = [
+  {
+    title: "Google's CyberSecurity Couse",
+    image: googlecert,
+    description:
+      "Completing the Google Cybersecurity Course was a significant milestone for me, as it provided an excellent foundation in cybersecurity. This certificate not only introduced me to the fundamentals of cybersecurity but also equipped me with practical skills and knowledge essential for the field. It served as a stepping stone in my journey towards becoming proficient in cybersecurity and reinforced my passion for safeguarding digital assets",
+    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    link: "https://coursera.org/share/3c8d9c3cc766a9be1a43c4f129e933d9"
+  },
+
+]
+
+export const CONTACT = {
+  address: "Bhiwandi, Maharashtra",
+  phoneNo: "+917028393406 ",
+  email: "dyavanapellisujal7@gmail.com",
+  
+};
