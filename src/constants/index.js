@@ -96,3 +96,4 @@ export const CONTACT = {
   email: "dyavanapellisujal7@gmail.com",
   
 };
+
