@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="text-center tracking-tighter">
        <a href="https://medium.com/@dyavanapellisujal7" target="_blank"> <p className="my-4 underline">{CONTACT.medium}</p></a>
        <a href="https://www.linkedin.com/in/dyavanapelli-sujal-409766249/ " target="_blank" > <p className="my-4 underline">{CONTACT.linkedin}</p> </a>
-       <p className="my-4">{CONTACT.phoneNo}</p>
+       
         <a href="mailto:dyavanpellisujal7@gmail.com" className="border-b">{CONTACT.email}</a>
       </div>
     </motion.div>
