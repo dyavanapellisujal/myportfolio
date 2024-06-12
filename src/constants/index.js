@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import googlecert from "../assets/projects/New-Google-Logo-497x500.webp"
 import { FaLinkedin } from "react-icons/fa"
+import defendergpo from "../assets/projects/defender.webp"
 // import { Link } from 'react-router-dom';  
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -57,6 +58,13 @@ export const PROJECTS = [
       "In this project, I present a comprehensive guide to Wi-Fi penetration testing using Aircrack-ng. From understanding Wi-Fi security protocols to performing attacks, this project showcases my skills in ethical hacking and cybersecurity. Follow along as I walk you through setting up the environment, performing Wi-Fi attacks, and cracking Wi-Fi passwords using Aircrack-ng. Gain valuable insights into defending against Wi-Fi attacks and learn best practices for securing Wi-Fi networks. Whether you're a beginner or an experienced enthusiast, this project serves as a valuable resource for exploring the fascinating world of Wi-Fi penetration testing",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
     link: "https://medium.com/@dyavanapellisujal7/how-to-hack-wi-fi-networks-b73969824e64"
+  },
+  {title: "Configuring Firewall rules using GPO's ",
+    image: defendergpo,
+    description:
+      "Configuring firewall rules on end hosts can be exhausting when done manually on every device. However, there is an efficient way to configure these policies on devices within a domain using Active Directory services. The blog above explains how to configure firewall policies in an AD environment. This project demonstrates how to restrict domain users and devices from accessing websites based on the policies defined by the organization.",
+    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    link: "https://medium.com/@dyavanapellisujal7/configuring-firewall-policies-using-gpos-in-active-directory-f12a95632b51"
   },
     // {
     //   title: "Portfolio Website",
