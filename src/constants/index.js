@@ -5,6 +5,7 @@ import project4 from "../assets/projects/project-4.jpg";
 import googlecert from "../assets/projects/New-Google-Logo-497x500.webp"
 import { FaLinkedin } from "react-icons/fa"
 import defendergpo from "../assets/projects/defender.webp"
+import Apache_Tomcat from "../assets/projects/Apache_Tomcat_Logo.png"
 // import { Link } from 'react-router-dom';  
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -43,6 +44,27 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Intrusion Detection With Splunk",
+    image: Apache_Tomcat,
+    description:
+      "In this project, I utilized a dataset provided by Hack The Box to analyze and detect intrusions using Splunk. The project involved ingesting and parsing data within Splunk to identify malicious activities. Through this lab, I demonstrated my ability to work with Splunk for security information and event management (SIEM), effectively using its powerful search and visualization capabilities to detect security incidents. This project showcases my skills in data analysis, threat detection, and incident response..",
+    technologies:[ "Splunk"],
+    link: "https://docs.google.com/document/d/1pq__0gzgL9ZI9wHc9WqtmsIzP29068_H/edit?usp=sharing&ouid=101903087259638646553&rtpof=true&sd=true"
+  },
+
+
+
+  {
+    title: "Detection and Analysis of Attacker TTPs on a Compromised Tomcat Webserver",
+    image: Apache_Tomcat,
+    description:
+      "In this Lab project, I successfully detected and analyzed the tactics, techniques, and procedures (TTPs) used by attackers on a compromised Tomcat webserver. The analysis was conducted using PCAP files containing webserver communication logs. Utilizing tools such as Wireshark and NetworkMiner, I performed a detailed examination of the network traffic, identified malicious activities, and uncovered the methods used by the attackers to compromise the server. This project demonstrates my ability to conduct network forensics, interpret network traffic data, and apply blue team methodologies to identify and mitigate security incidents.",
+    technologies:[ "NetworkMiner", "wireshark"],
+    link: "https://medium.com/@dyavanapellisujal7/securely-configure-shares-in-active-directory-group-based-access-control-and-permissions-5bd840fac05e"
+  },
+
+
   {
     title: "Securely Configuring Shared Folders in AD",
     image: project1,
