@@ -1,12 +1,14 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+
 import googlecert from "../assets/projects/New-Google-Logo-497x500.webp"
 import { FaLinkedin } from "react-icons/fa"
 import defendergpo from "../assets/projects/defender.webp"
 import Apache_Tomcat from "../assets/projects/Apache_Tomcat_Logo.png"
+import password_spray from "../assets/projects/password_spraying.png"
+import kerberoast from "../assets/projects/kerberoasting.png"
+import Homelab from "../assets/projects/Homelab.png"
 // import { Link } from 'react-router-dom';  
+
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -44,13 +46,34 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+
+
+
   {
-    title: "Intrusion Detection With Splunk",
-    image: Apache_Tomcat,
+    title: "Cybersecurity Home Lab",
+    image: Homelab,
     description:
-      "In this project, I utilized a dataset provided by Hack The Box to analyze and detect intrusions using Splunk. The project involved ingesting and parsing data within Splunk to identify malicious activities. Through this lab, I demonstrated my ability to work with Splunk for security information and event management (SIEM), effectively using its powerful search and visualization capabilities to detect security incidents. This project showcases my skills in data analysis, threat detection, and incident response..",
-    technologies:[ "Splunk"],
-    link: "https://docs.google.com/document/d/1pq__0gzgL9ZI9wHc9WqtmsIzP29068_H/edit?usp=sharing&ouid=101903087259638646553&rtpof=true&sd=true"
+      "Demonstrated my skills in networking , virtualization and network security through my home lab project. The home lab is built with a perspective of a blue team to simulate attacks and detect them using splunk and suricata, utilized Pfsense firewall to manage the traffic in and out of the network. The lab is completely a virtualized lab using virtualbox.",
+    technologies:[ "Splunk,Virtualbox,Pfsense,Suricata"],
+    link: "https://medium.com/@dyavanapellisujal7/soc-home-lab-part-1-6309b5b91118"
+  },
+
+  {
+    title: "Detecting Kerberoasting with Honeypot and Splunk.",
+    image: kerberoast,
+    description:
+      "This project delves into demonstrating the kerberoasting attack and discussing the opportunities to detect the kerberoasting attack. Leveraged a honeypot service account and the windows event logs to detect potential Kerberoasting attack in the active directory environment.",
+    technologies: ["Splunk,Windows Event Logs,Active Directory, Powerview"],
+    link: "https://medium.com/@dyavanapellisujal7/detecting-kerberoasting-with-honeypot-and-splunk-d10dfc0c4dd5"
+  },
+
+  {
+    title: "Detecting Password Spraying with Splunk",
+    image: password_spray,
+    description:
+      "In this project I have demonstrated how password spraying works and how it can be detected using Splunk as a SIEM Solution. Demonstrated the lab in my own active directory environment. ",
+    technologies:[ "Splunk,Active Directory , Windows Event Logs"],
+    link: "https://medium.com/@dyavanapellisujal7/detecting-password-spraying-attacks-in-active-directory-environment-39e5088288f4"
   },
 
 
@@ -70,38 +93,19 @@ export const PROJECTS = [
     image: project1,
     description:
       " In this project, I demonstrate the secure configuration of shared folders in Active Directory (AD), highlighting my expertise in Windows Server administration and cybersecurity. Shared folders are essential for collaborative work environments, but improper configuration can lead to security vulnerabilities. Follow along as I guide you through the process of securely configuring shared folders in AD, including setting appropriate permissions, implementing access controls. Whether you're a system administrator or a cybersecurity enthusiast, this project provides valuable insights into securing shared resources in an enterprise environment.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Active Directory"],
     link: "https://medium.com/@dyavanapellisujal7/securely-configure-shares-in-active-directory-group-based-access-control-and-permissions-5bd840fac05e"
   },
-  {
-    title: "Hacking Wifi with Aircrack-ng",
-    image: project2,
-    description:
-      "In this project, I present a comprehensive guide to Wi-Fi penetration testing using Aircrack-ng. From understanding Wi-Fi security protocols to performing attacks, this project showcases my skills in ethical hacking and cybersecurity. Follow along as I walk you through setting up the environment, performing Wi-Fi attacks, and cracking Wi-Fi passwords using Aircrack-ng. Gain valuable insights into defending against Wi-Fi attacks and learn best practices for securing Wi-Fi networks. Whether you're a beginner or an experienced enthusiast, this project serves as a valuable resource for exploring the fascinating world of Wi-Fi penetration testing",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-    link: "https://medium.com/@dyavanapellisujal7/how-to-hack-wi-fi-networks-b73969824e64"
-  },
+  
+
   {title: "Configuring Firewall rules using GPO's ",
     image: defendergpo,
     description:
       "Configuring firewall rules on end hosts can be exhausting when done manually on every device. However, there is an efficient way to configure these policies on devices within a domain using Active Directory services. The blog above explains how to configure firewall policies in an AD environment. This project demonstrates how to restrict domain users and devices from accessing websites based on the policies defined by the organization.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Windows Defenders, Group Policy Management , Active Directory"],
     link: "https://medium.com/@dyavanapellisujal7/configuring-firewall-policies-using-gpos-in-active-directory-f12a95632b51"
   },
-    // {
-    //   title: "Portfolio Website",
-    //   image: project3,
-    //   description:
-    //     "A personal portfolio website showcasing projects, skills, and contact information.",
-    //   technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    // },
-  // {
-  //   title: "Blogging Platform",
-  //   image: project4,
-  //   description:
-  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  // },
+    
 ];
 
 export const Certifications = [
