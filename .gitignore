@@ -9,3 +9,6 @@ next-env.d.ts
 .DS_Store
 .vercel
 
+
+# Original upload; the site serves public/Sujal_Dyavanapelli_Resume.pdf
+/Sujal_Platform_Engineer.pdf

@@ -84,6 +84,15 @@ export default function ResumePage() {
         </div>
       </Section>
 
+      <Section eyebrow="Education">
+        <p className="text-[0.95rem] text-fg">
+          {education.school} <span className="font-mono text-xs text-faint">· {education.date}</span>
+        </p>
+        <p className="mt-1 text-sm text-muted">
+          {education.degree} · Specialization: {education.specialization} · {education.grade}
+        </p>
+      </Section>
+
       <Section id="skills" eyebrow="Skills">
         <dl className="space-y-3">
           {skills.map((s) => (
@@ -114,14 +123,6 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section eyebrow="Education">
-        <p className="text-[0.95rem] text-fg">
-          {education.school} <span className="font-mono text-xs text-faint">· {education.date}</span>
-        </p>
-        <p className="mt-1 text-sm text-muted">
-          {education.degree} · Specialization: {education.specialization} · {education.grade}
-        </p>
-      </Section>
 
       <Section eyebrow="Achievements">
         <ul className="text-sm text-fg/90">
