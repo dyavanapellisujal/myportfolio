@@ -64,26 +64,6 @@ export default function ResumePage() {
         </p>
       </Section>
 
-      <Section eyebrow="Education">
-        <p className="text-[0.95rem] text-fg">
-          {education.school} <span className="font-mono text-xs text-faint">· {education.date}</span>
-        </p>
-        <p className="mt-1 text-sm text-muted">
-          {education.degree} · Specialization: {education.specialization} · {education.grade}
-        </p>
-      </Section>
-
-      <Section id="skills" eyebrow="Skills">
-        <dl className="space-y-3">
-          {skills.map((s) => (
-            <div key={s.group} className="grid gap-1 sm:grid-cols-[16rem_1fr] sm:gap-6">
-              <dt className="text-sm font-medium text-fg">{s.group}</dt>
-              <dd className="text-sm text-muted">{s.items.join(", ")}</dd>
-            </div>
-          ))}
-        </dl>
-      </Section>
-
       <Section eyebrow="Work experience">
         <div className="space-y-8">
           {experience.map((r) => (
@@ -104,6 +84,17 @@ export default function ResumePage() {
         </div>
       </Section>
 
+      <Section id="skills" eyebrow="Skills">
+        <dl className="space-y-3">
+          {skills.map((s) => (
+            <div key={s.group} className="grid gap-1 sm:grid-cols-[16rem_1fr] sm:gap-6">
+              <dt className="text-sm font-medium text-fg">{s.group}</dt>
+              <dd className="text-sm text-muted">{s.items.join(", ")}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
       <Section eyebrow="Personal projects">
         <div className="space-y-6">
           {resumeProjects.map((p) => (
@@ -121,6 +112,15 @@ export default function ResumePage() {
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section eyebrow="Education">
+        <p className="text-[0.95rem] text-fg">
+          {education.school} <span className="font-mono text-xs text-faint">· {education.date}</span>
+        </p>
+        <p className="mt-1 text-sm text-muted">
+          {education.degree} · Specialization: {education.specialization} · {education.grade}
+        </p>
       </Section>
 
       <Section eyebrow="Achievements">
