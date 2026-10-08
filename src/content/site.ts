@@ -6,7 +6,7 @@ export const site = {
   role: "DevOps / Platform Engineer",
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://sujal-dyavanapelli.vercel.app").replace(/\/$/, ""),
   positioning:
-    "Cloud and platform engineer building reliable Kubernetes and cloud infrastructure across AWS and GCP.",
+    "Cloud and platform engineer building reliable Kubernetes and cloud infrastructure.",
   intro:
     "I work on Kubernetes platforms, GitOps delivery, event-driven autoscaling and cloud security. Most of what I know I learned by building a system, breaking it, debugging it and writing down what happened. The repositories and write-ups linked here are the evidence.",
   description:
