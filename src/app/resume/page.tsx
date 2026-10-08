@@ -56,11 +56,11 @@ export default function ResumePage() {
 
       <Section id="text" eyebrow="Text version" title="Profile summary">
         <p className="max-w-3xl text-[0.95rem] leading-relaxed text-fg/90">
-          Versatile Cloud and DevOps Engineer with hands-on experience in building, automating, and securing cloud-native
-          infrastructure. Proficient in leveraging DevOps practices to drive efficient software delivery while embedding
-          security and compliance across the development lifecycle. Experienced in cloud optimization, cost efficiency,
-          and disaster recovery planning. Skilled in collaborating with cross-functional teams to design scalable,
-          high-performance systems with a strong focus on automation, reliability, and governance.
+          Cloud and platform engineer building, automating and securing cloud-native infrastructure on AWS and GCP. Most of
+          my work is container orchestration, mainly Kubernetes (EKS, GKE), along with Amazon ECS and AWS App Runner:
+          migrating services, packaging them with Helm, delivering them with GitOps and scaling them on the right signal.
+          Experienced in cloud cost optimization, disaster recovery and security governance, with a cybersecurity
+          background that shapes how I build platforms: least privilege, policy as code and automated response.
         </p>
       </Section>
 
@@ -104,7 +104,7 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section eyebrow="Project work">
+      <Section eyebrow="Personal projects">
         <div className="space-y-6">
           {resumeProjects.map((p) => (
             <div key={p.slug}>

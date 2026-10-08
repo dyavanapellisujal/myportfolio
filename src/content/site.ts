@@ -68,7 +68,10 @@ export const skills = [
     items: [
       "AWS",
       "GCP",
-      "Kubernetes (GKE, EKS)",
+      "Kubernetes (EKS, GKE)",
+      "Amazon ECS",
+      "AWS App Runner",
+      "Elastic Beanstalk",
       "Docker",
       "Helm",
       "ArgoCD",
@@ -76,21 +79,14 @@ export const skills = [
       "GitOps",
       "Infrastructure as Code",
       "Blue-Green Deployments",
-      "Disaster Recovery Strategies",
-      "Containerized Microservices",
+      "Disaster Recovery",
     ],
   },
+  { group: "Event-Driven & Distributed Systems", items: ["KEDA", "Celery", "Redis", "Event-Driven and Queue-Based Workloads"] },
+  { group: "Observability & Reliability", items: ["Application Performance Monitoring (New Relic, CubeAPM)", "Infrastructure Monitoring"] },
   {
-    group: "Event-Driven & Distributed Systems",
-    items: ["KEDA", "Celery", "Event-Driven Workloads"],
-  },
-  {
-    group: "Observability & Reliability",
-    items: ["Application Performance Monitoring (New Relic, CubeAPM)", "Infrastructure Monitoring"],
-  },
-  {
-    group: "Network & Cloud Security",
-    items: ["Linux", "Network Hardening", "VPC Security", "Security Groups", "NACLs", "Load Balancing", "DNS"],
+    group: "Linux & Networking",
+    items: ["Linux", "VPC Security", "Security Groups", "NACLs", "Routing", "Load Balancing", "DNS", "Network Hardening", "VMware", "VirtualBox"],
   },
 ] as const;
 
@@ -159,34 +155,31 @@ export const story = [
   },
 ] as const;
 
-/** Project section exactly as it appears on the resume (used by /resume). */
+/** "Personal Projects" exactly as on the resume PDF (resume-src/*.tex), used by /resume. */
 export const resumeProjects = [
   {
-    title: "OpsMemory – AI-Powered Engineering Memory Platform",
-    slug: "opsmemory",
+    title: "Fast Self-Hosted GitHub Runners on Kubernetes",
+    slug: "self-hosted-github-runners-caching",
     points: [
-      "Engineered an AI memory platform using Python, FastAPI, Cognee, PostgreSQL (pgvector), and Kuzu, enabling AI agents to continuously learn from war room meetings, incidents, runbooks and engineering documentation.",
-      "Built a hybrid vector + knowledge graph retrieval engine that transforms incident evidence into persistent organizational memory, auto-generates living incident documentation, captures operational lessons, and provides cited, context-aware responses for future troubleshooting.",
+      "Ran GitHub Actions on self-hosted Actions Runner Controller (ARC) runners, which keep every job in a fresh, ephemeral pod, and moved build state into the cluster to make builds fast.",
+      "Added a long-lived remote BuildKit daemon on a persistent volume for Docker layer caching, and an in-cluster Actions cache server for npm and Next.js caches, cutting a Docker build from 231 s to 3 s on a warm cache.",
+      "Published it as a hands-on workshop and wrote up the silent failure modes, such as overwritten cache URLs and registry manifest errors.",
     ],
   },
   {
-    title: "Automated Serverless Incident Response Workflow on AWS",
+    title: "Automated Serverless Incident Response on AWS",
     slug: "aws-automated-incident-response",
     points: [
-      "Built a serverless incident response pipeline using GuardDuty, EventBridge, SNS, and Lambda (Python).",
-      "Simulated IAM credential compromise scenarios and automated remediation using infrastructure as code.",
-      "Achieved an average containment time of under 10 minutes, reducing manual triage efforts.",
+      "Built a serverless incident response pipeline and simulated IAM credential compromise to test automated remediation, defined as infrastructure as code.",
+      "Achieved an average containment time of under 10 minutes, reducing manual triage effort.",
     ],
   },
   {
-    title: "Real-Time Cloud Security Posture Management (CSPM) System",
+    title: "Real-Time Cloud Security Posture Management (CSPM)",
     slug: "serverless-cspm",
     points: [
-      "Designed and implemented a comprehensive CSPM solution using AWS Lambda, EventBridge, SQS, and MongoDB for real-time S3 bucket security monitoring and compliance assessment.",
-      "Integrated Open Policy Agent (OPA) for Policy-as-Code enforcement, automatically evaluating S3 bucket configurations against security policies and generating risk assessments.",
-      "Developed automated security auditing pipeline that captures S3 events, analyzes bucket configurations (encryption, ACLs, public access), and stores findings in MongoDB with real-time dashboard visualization using React and Flask.",
-      "Implemented serverless architecture with Python Lambda functions, ensuring scalable security monitoring.",
-      "Created modular Terraform infrastructure-as-code templates, enabling seamless deployment and integration into existing AWS environments with minimal configuration overhead and standardized resource provisioning.",
+      "Designed a CSPM for real-time S3 security monitoring, with Open Policy Agent enforcing policy-as-code checks on encryption, ACLs and public access.",
+      "Stored findings and risk assessments in MongoDB with a React and Flask dashboard, deployed through modular Terraform templates.",
     ],
   },
 ] as const;

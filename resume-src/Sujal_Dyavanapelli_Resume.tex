@@ -1,0 +1,193 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{titlesec}
+
+% Page margins
+\geometry{left=0.5in, right=0.5in, top=0.5in, bottom=0.5in}
+
+% Colors
+\definecolor{blue}{RGB}{0,112,192}
+
+% Links
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{blue}}{\thesection}{0.5em}{}[{\titlerule[0.8pt]}]
+
+% Compact lists
+\setlist[itemize]{noitemsep, topsep=2pt, partopsep=0pt, leftmargin=*}
+\setlength{\parskip}{0.2ex}
+
+\begin{document}
+
+%==========================
+% HEADER
+%==========================
+
+\begin{center}
+    {\LARGE\bfseries Sujal Dyavanapelli}\\[0.3em]
+    \textbf{\large Platform Engineer | DevOps}\\[0.5em]
+
+    \faEnvelope\ \href{mailto:sujaldyavanapelli80@gmail.com}{sujaldyavanapelli80@gmail.com}
+    \\[0.3em]
+
+    \faLinkedin\ \href{https://www.linkedin.com/in/dyavanapelli-sujal-409766249/}{LinkedIn}
+    \quad | \quad
+    \faGithub\ \href{https://github.com/dyavanapellisujal}{GitHub}
+    \quad | \quad
+    \faMedium\ \href{https://medium.com/@dyavanapellisujal7}{Medium}
+\end{center}
+
+%==========================
+% PROFILE SUMMARY
+%==========================
+
+\section*{Profile Summary}
+
+Cloud and platform engineer building, automating and securing cloud-native infrastructure on AWS and GCP. Most of my work is container orchestration, mainly Kubernetes (EKS, GKE), along with Amazon ECS and AWS App Runner: migrating services, packaging them with Helm, delivering them with GitOps and scaling them on the right signal. Experienced in cloud cost optimization, disaster recovery and security governance, with a cybersecurity background that shapes how I build platforms: least privilege, policy as code and automated response.
+
+%==========================
+% EDUCATION
+%==========================
+
+\section*{Education}
+
+\textbf{Thakur College of Engineering and Technology}
+\hfill May 2026
+
+Bachelor of Technology in Computer Science and Engineering -- Specialization: Cybersecurity
+
+\textbf{CGPA:} 9.15/10.00
+
+%==========================
+% TECHNICAL SKILLS
+%==========================
+
+\section*{Technical Skills}
+
+\textbf{Programming \& Automation:} Python (FastAPI), Bash, Terraform
+
+\textbf{Cloud \& Platform Engineering:} AWS, GCP, Kubernetes (EKS, GKE), Amazon ECS, AWS App Runner, Elastic Beanstalk, Docker, Helm, ArgoCD, GitHub Actions, GitOps, Infrastructure as Code, Blue-Green Deployments, Disaster Recovery
+
+\textbf{Event-Driven \& Distributed Systems:} KEDA, Celery, Redis, Event-Driven and Queue-Based Workloads
+
+\textbf{Observability \& Reliability:} Application Performance Monitoring (New Relic, CubeAPM), Infrastructure Monitoring
+
+\textbf{Linux \& Networking:} Linux, VPC Security, Security Groups, NACLs, Routing, Load Balancing, DNS, Network Hardening, VMware, VirtualBox
+
+%==========================
+% WORK EXPERIENCE
+%==========================
+
+\section*{Work Experience}
+
+\textbf{HeyMarvin} -- Remote \hfill Jan 2026 -- Present
+
+\textit{Platform Engineer}
+
+\begin{itemize}[label=-]
+    \item Migrated services from \textbf{AWS Elastic Beanstalk to Amazon EKS} with engineering teams using \textbf{GitOps}, designing reusable deployment workflows that cut onboarding time for new services and improved scalability, deployment consistency and disaster recovery readiness.
+
+    \item Built a \textbf{multi-cluster EKS platform}: Terraform for the clusters, one Helm chart per service, and a hub \textbf{ArgoCD} reconciling every cluster through ApplicationSets.
+
+    \item Ran CI on \textbf{self-hosted GitHub Actions runners in Kubernetes} with in-cluster build caching, making deployments \textbf{65--70\% faster}.
+
+    \item Integrated \textbf{KEDA-based event-driven autoscaling} for queue-based workloads, scaling Celery workers from zero on queue depth instead of CPU.
+
+    \item Developed reusable \textbf{Helm chart templates} and automated CI/CD workflows with \textbf{GitHub Actions}, standardizing deployments across Kubernetes environments.
+
+    \item Deployed and managed \textbf{observability and monitoring} for infrastructure and applications, improving visibility, incident detection and performance troubleshooting.
+\end{itemize}
+
+\textbf{Fixerra} -- Remote \hfill June 2025 -- Dec 2025
+
+\textit{DevSecOps Engineer}
+
+\begin{itemize}[label=-]
+    \item Led \textbf{cloud and security operations} at a fintech startup, running containerized services on \textbf{Amazon ECS} and \textbf{AWS App Runner}.
+
+    \item Achieved \textbf{56\% AWS cost optimization} by restructuring compute, tightening storage lifecycles and eliminating redundant workloads identified during an infrastructure assessment.
+
+    \item Built a serverless \textbf{funnel-data ETL pipeline} on \textbf{Lambda, S3, AWS Glue and Athena} running at almost zero cost.
+
+    \item Supported \textbf{ISO audit certification} by strengthening cloud security posture, enforcing governance controls and ensuring compliance with organizational and regulatory standards.
+
+    \item Designed and implemented \textbf{Disaster Recovery (DR) strategies} for system resilience, failover readiness and business continuity.
+\end{itemize}
+
+\textbf{Flexiloans} -- Mumbai, IN \hfill Nov 2024 -- Mar 2025
+
+\textit{Infosec Consultant Intern}
+
+\begin{itemize}[label=-]
+    \item Led and executed \textbf{5+ cloud TPRM assessments}, identifying critical vendor risks aligned with compliance standards.
+
+    \item Supported \textbf{incident response engineering} through detailed root-cause investigations and incident workflow documentation.
+
+    \item Evaluated and conducted POCs for enterprise-grade \textbf{DLP solutions}, contributing to improved data protection strategies.
+\end{itemize}
+
+\textbf{IIT Bombay Trust Lab} -- Mumbai, IN \hfill Sept 2024 -- Oct 2024
+
+\textit{SOC Analyst Intern}
+
+\begin{itemize}[label=-]
+    \item Customized and deployed \textbf{Wazuh SIEM} to ingest and correlate logs for real-time phishing detection.
+
+    \item Developed actionable \textbf{security dashboards} for phishing attack visibility and alerting.
+
+    \item Collaborated with academic leadership to architect an \textbf{open-source SOC lab}, integrating multiple detection and response tools.
+\end{itemize}
+
+%==========================
+% PERSONAL PROJECTS
+%==========================
+
+\section*{Personal Projects}
+
+\textbf{Fast Self-Hosted GitHub Runners on Kubernetes} \hfill \textit{Kubernetes, ARC, GitHub Actions, BuildKit, Docker, Helm, kind}
+
+\begin{itemize}[label=-]
+    \item Ran GitHub Actions on self-hosted \textbf{Actions Runner Controller (ARC)} runners, which keep every job in a fresh, ephemeral pod, and moved build state into the cluster to make builds fast.
+
+    \item Added a long-lived remote \textbf{BuildKit} daemon on a persistent volume for Docker layer caching, and an in-cluster \textbf{Actions cache server} for npm and Next.js caches, cutting a Docker build from \textbf{231\,s to 3\,s} on a warm cache.
+
+    \item Published it as a hands-on workshop and wrote up the silent failure modes, such as overwritten cache URLs and registry manifest errors.
+\end{itemize}
+
+\textbf{Automated Serverless Incident Response on AWS} \hfill \textit{GuardDuty, EventBridge, SNS, Lambda (Python), Terraform}
+
+\begin{itemize}[label=-]
+    \item Built a serverless incident response pipeline and simulated IAM credential compromise to test automated remediation, defined as infrastructure as code.
+
+    \item Achieved an average containment time of \textbf{under 10 minutes}, reducing manual triage effort.
+\end{itemize}
+
+\textbf{Real-Time Cloud Security Posture Management (CSPM)} \hfill \textit{Lambda, EventBridge, SQS, MongoDB, OPA, Terraform}
+
+\begin{itemize}[label=-]
+    \item Designed a CSPM for real-time S3 security monitoring, with \textbf{Open Policy Agent} enforcing policy-as-code checks on encryption, ACLs and public access.
+
+    \item Stored findings and risk assessments in MongoDB with a React and Flask dashboard, deployed through modular \textbf{Terraform} templates.
+\end{itemize}
+
+%==========================
+% ACHIEVEMENTS
+%==========================
+
+\section*{Achievements}
+
+\textbf{Top 5 Finalist -- Smart India Hackathon 2023} \hfill Dec 2023
+
+\end{document}
