@@ -1,0 +1,33 @@
+name: sync-content
+
+# Weekly refresh of the GitHub and Medium snapshots, proposed as a PR so new
+# repositories/articles can be curated before they go live.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/sync-github.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Medium often rate-limits CI IPs; a failure here just means no change.
+      - run: node scripts/sync-medium.mjs
+        continue-on-error: true
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/content-sync
+          commit-message: "chore: sync GitHub and Medium snapshots"
+          title: "Sync GitHub and Medium snapshots"
+          body: "Automated weekly refresh of `data/`. Curate any new repos in `src/content/projects.ts` and new posts in `src/content/writing.ts` before merging."

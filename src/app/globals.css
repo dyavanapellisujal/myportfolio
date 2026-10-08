@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* Design tokens. Dark, neutral, one restrained accent. */
+@theme {
+  --color-bg: #0b0d10;
+  --color-surface: #111418;
+  --color-raised: #161a20;
+  --color-line: #232830;
+  --color-line-strong: #323944;
+  --color-fg: #e7e9ec;
+  --color-muted: #a3aab5;
+  --color-faint: #808896;
+  --color-accent: #7dd3b0;
+  --color-accent-strong: #a7f3d0;
+  --color-caution: #e5c07b;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Inline text links inside prose. */
+  .link {
+    color: var(--color-fg);
+    text-decoration: underline;
+    text-decoration-color: var(--color-line-strong);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 120ms;
+  }
+  .link:hover {
+    text-decoration-color: var(--color-accent);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-faint);
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+  }
+
+  .prose-list > li {
+    position: relative;
+    padding-left: 1.1rem;
+  }
+  .prose-list > li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 0.68em;
+    width: 0.35rem;
+    height: 1px;
+    background: var(--color-faint);
+  }
+}
+
+/* Mobile nav uses <details>; hide the default disclosure marker. */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  list-style: none;
+}

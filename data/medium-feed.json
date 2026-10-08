@@ -1,0 +1,145 @@
+{
+  "handle": "dyavanapellisujal7",
+  "syncedAt": "2026-10-07T19:35:32.638Z",
+  "posts": [
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/your-self-hosted-github-runners-are-slow-because-theyre-supposed-to-be-d0a92696458e",
+      "title": "Your Self-Hosted GitHub Runners Are Slow Because They’re Supposed to Be",
+      "date": "2026-09-03",
+      "tags": [
+        "github-actions",
+        "kubernetes",
+        "software-engineering",
+        "devops",
+        "deployment"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1024/1*-TgvT_FmCX6pJy27itHKYw.png",
+      "excerpt": "If you’ve moved GitHub Actions onto your own Kubernetes cluster with the Actions Runner Controller , you’ve probably had this moment: the runners work, the jobs run, everything is green and every build takes as long as the very first one did. npm ci downloads 180 packages. pip in"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/from-tribal-knowledge-to-cognitive-architecture-building-opsmemory-with-cognee-12838bb84f3e",
+      "title": "From Tribal Knowledge to Cognitive Architecture: Building OpsMemory with Cognee",
+      "date": "2026-07-04",
+      "tags": [
+        "incident-response",
+        "cognee",
+        "ai-agent",
+        "rags"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1024/1*msBqG9I_qJrha-c_lx4UVw.png",
+      "excerpt": "The Journey: The Problem I Brought to the Hangover Hackathon Every engineering team bleeds operational knowledge. When a P1 incident strikes at 2 AM, the race to mitigate isn’t usually blocked by a lack of engineering skill it’s blocked by a lack of context. The runbooks are stal"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/secure-cross-account-vpc-communication-in-aws-using-peering-connections-2b3a28829fde",
+      "title": "Secure Cross-Account VPC Communication in AWS Using Peering Connections",
+      "date": "2025-05-23",
+      "tags": [
+        "cloud-networking",
+        "cloud-computing",
+        "cloud-security",
+        "aws",
+        "cybersecurity"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1024/1*qPtlDb202P1L7xFyRQZTgw.png",
+      "excerpt": "Imagine you maintain a dedicated Security VPC hosting monitoring tools (e.g., Wazuh, Suricata, ELK) and a separate Application VPC hosting production workloads. If you only needed to expose a single service , such as a dashboard or API, then AWS PrivateLink (VPC Endpoint Service)"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/serverless-incident-response-workflow-on-aws-using-guardduty-eventbridge-sns-lambda-b24914b96581",
+      "title": "Serverless Incident Response Workflow on AWS Using GuardDuty, EventBridge, SNS & Lambda.",
+      "date": "2025-04-06",
+      "tags": [
+        "serverless",
+        "cybersecurity",
+        "aws",
+        "cloud-security",
+        "incident-response"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1024/1*RCYUqctYore9jbW7kHwkxQ.png",
+      "excerpt": "Hey everyone! In this blog, I’ll walk you through how I built an automated incident response system in an AWS environment using native AWS services. This project demonstrates how to detect threats using Amazon GuardDuty and automatically respond to them using EventBridge , Lambda"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/securely-connecting-s3-to-vpc-via-gateway-endpoint-in-aws-e43e26f812d2",
+      "title": "Securely Connecting S3 to VPC via Gateway Endpoint in AWS",
+      "date": "2025-02-20",
+      "tags": [
+        "cybersecurity",
+        "cloud-security",
+        "aws",
+        "vpc",
+        "cloud-computing"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1024/1*q0y1OtN5gExGgKoi7Lon4w.png",
+      "excerpt": "Private resources in an AWS VPC can access other AWS services without sending traffic to the Internet by using VPC endpoints . This is important for security reasons, as it prevents exposure of traffic to the public Internet. Additionally, using VPC endpoints helps reduce costs b"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/docker-macvlan-and-ipvlan-explained-advanced-networking-guide-b3ba20bc22e4",
+      "title": "Docker MacVLAN and IPVLAN Explained: Advanced Networking Guide",
+      "date": "2025-02-18",
+      "tags": [
+        "devops",
+        "devsecops",
+        "containerization",
+        "docker",
+        "docker-networking"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/1005/1*n4ytl7zBHpIEuoidP-26hw.png",
+      "excerpt": "Docker networking is not just limited to exposing ports and binding them to the host where the container is running. Docker itself provides various networking features. In this blog, I will discuss two network types: MacVLAN and IPVLAN networking in Docker. The Overlay network, w"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/understanding-aws-sts-temporary-credentials-made-simple-7d3947804609",
+      "title": "Understanding AWS STS: Temporary Credentials Made Simple",
+      "date": "2025-02-03",
+      "tags": [
+        "cybersecurity",
+        "cloud-security",
+        "iam-roles",
+        "aws",
+        "cloud-computing"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/621/1*66amgu3Jgx6sQFQZtaLLlA.png",
+      "excerpt": "STS stands for Security Token Service , which allows IAM or federated (directory) users to assume roles that might require additional permissions temporarily. STS generates a temporary access token and keys with the permissions of the assumed role. Understanding with an Example: "
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/aws-s3-encryption-with-customer-managed-keys-using-sse-kms-for-secure-object-storage-045f6fddeea5",
+      "title": "AWS S3 Encryption with Customer Managed Keys: Using SSE-KMS for Secure Object Storage",
+      "date": "2025-02-01",
+      "tags": [
+        "cybersecurity",
+        "cloud",
+        "cloud-security",
+        "aws",
+        "cloud-computing"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/607/0*RgJvGd1tr__gbU7P.png",
+      "excerpt": "Data encryption is critical for organizations to meet compliance standards and protect sensitive information. Whether data is stored on-premises or in the cloud, securing it both at rest and in transit is essential. This ensures that even if an unauthorized party gains access to "
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/understanding-and-configuring-cors-in-aws-s3-with-examples-c9698ad686b3",
+      "title": "Understanding and Configuring CORS in AWS S3 (With Examples)",
+      "date": "2025-01-10",
+      "tags": [
+        "cybersecurity",
+        "aws-s3",
+        "cloud",
+        "cloud-computing",
+        "aws"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/451/0*D3LjTNDfxQ3Q877X",
+      "excerpt": "ref: link Same Origin Policy: By default, browsers enforce the Same-Origin Policy (SOP) , which restricts web pages from making HTTP requests to a origin(domain) different from the one that served the web page. For example, if client-side JavaScript on a website hosted at sec.suj"
+    },
+    {
+      "url": "https://medium.com/@dyavanapellisujal7/implementing-aws-waf-on-an-application-load-balancer-89000edb439d",
+      "title": "Implementing AWS WAF on an Application Load Balancer",
+      "date": "2024-12-08",
+      "tags": [
+        "web-application-firewall",
+        "aws",
+        "cloud-security",
+        "aws-waf",
+        "aws-security"
+      ],
+      "cover": "https://cdn-images-1.medium.com/max/936/1*uvb59AibJ1rQZVisPkykCw.png",
+      "excerpt": "Diagram: Diagram The above diagram illustrates a secure web application setup using AWS WAF. Here’s a concise overview: AWS Environment Setup The web application runs on an EC2 instance inside a private subnet within a VPC . An Internet Gateway (IGW) provides internet access to t"
+    }
+  ]
+}
