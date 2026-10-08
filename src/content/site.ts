@@ -85,7 +85,7 @@ export const skills = [
   { group: "Event-Driven & Distributed Systems", items: ["KEDA", "Celery", "Redis", "Event-Driven and Queue-Based Workloads"] },
   { group: "Observability & Reliability", items: ["Application Performance Monitoring (New Relic, CubeAPM)", "Infrastructure Monitoring"] },
   {
-    group: "Linux & Networking",
+    group: "Linux | Networking | Virtualization",
     items: ["Linux", "VPC Security", "Security Groups", "NACLs", "Routing", "Load Balancing", "DNS", "Network Hardening", "VMware", "VirtualBox"],
   },
 ] as const;
