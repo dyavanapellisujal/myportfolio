@@ -1,8 +1,8 @@
 import type { Role } from "@/lib/types";
 
 // Based on the resume; siteOnly bullets add detail the PDF doesn't have yet.
-// Dates are kept exactly as written on the resume, including the overlapping
-// "Present" roles. Keep this consistent with `story` in site.ts.
+// Dates follow the resume, except Fixerra, which ended in 2025 (the PDF still
+// says "Present"). Keep this consistent with `story` in site.ts.
 
 export const experience: Role[] = [
   {
@@ -47,7 +47,7 @@ export const experience: Role[] = [
     role: "DevSecOps Engineer",
     location: "Remote",
     start: "June 2025",
-    end: "Present",
+    end: "Dec 2025",
     highlights: [
       {
         siteOnly: true,
