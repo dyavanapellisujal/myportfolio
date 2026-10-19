@@ -1,7 +1,28 @@
 {
   "user": "dyavanapellisujal",
-  "syncedAt": "2026-10-07T19:35:22.175Z",
+  "syncedAt": "2026-10-19T11:56:13.192Z",
   "repos": [
+    {
+      "name": "myportfolio",
+      "url": "https://github.com/dyavanapellisujal/myportfolio",
+      "description": "",
+      "homepage": "https://portfolio-umber-eight-10.vercel.app",
+      "fork": false,
+      "parent": null,
+      "archived": false,
+      "empty": false,
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 148821,
+        "JavaScript": 10302,
+        "TeX": 8409,
+        "CSS": 2231
+      },
+      "topics": [],
+      "stars": 0,
+      "createdAt": "2024-06-11T17:20:54Z",
+      "pushedAt": "2026-10-12T14:14:46Z"
+    },
     {
       "name": "Optimizing-Self-Hosted-GitHub-Runners-with-Caching",
       "url": "https://github.com/dyavanapellisujal/Optimizing-Self-Hosted-GitHub-Runners-with-Caching",
@@ -241,26 +262,6 @@
       "stars": 0,
       "createdAt": "2025-03-22T18:46:20Z",
       "pushedAt": "2025-03-22T20:55:20Z"
-    },
-    {
-      "name": "myportfolio",
-      "url": "https://github.com/dyavanapellisujal/myportfolio",
-      "description": "",
-      "homepage": "https://portfolio-umber-eight-10.vercel.app",
-      "fork": false,
-      "parent": null,
-      "archived": false,
-      "empty": false,
-      "language": "JavaScript",
-      "languages": {
-        "JavaScript": 24265,
-        "HTML": 367,
-        "CSS": 247
-      },
-      "topics": [],
-      "stars": 0,
-      "createdAt": "2024-06-11T17:20:54Z",
-      "pushedAt": "2025-03-01T06:29:32Z"
     },
     {
       "name": "aws_badal_automation_scripts",
